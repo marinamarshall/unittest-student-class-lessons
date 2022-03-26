@@ -11,4 +11,21 @@ class Student:
 
     @property
     def full_name(self):
+        """
+        full name
+        """
         return f"{self._first_name} {self._last_name}"
+
+
+    def alert_santa(self):
+        """
+        alert santa
+        """
+        self.naughty_list = True
+
+    @property
+    def email(self):
+        """
+        email
+        """
+        return f"{self._first_name.lower()}.{self._last_name.lower()}@email.com"
